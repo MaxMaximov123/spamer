@@ -59,12 +59,11 @@ try {
             }
         })(...JSON.parse(message));
     } catch (error) {
-        logger.error(error);
+        console.log(error);
         return;
     }
 
     if (message.error) {
-        // logger.warn(`Collector: ${JSON.stringify(message.error)}`);
         return;
     }
 
@@ -111,12 +110,12 @@ try {
     }
 
 } catch(error) {
-    logger.error(error);
+    console.log(error);
 }
 });
 
 webSocket.on('error', (error) => {
-    logger.error(error);
+    console.log(error);
 });
 
 
