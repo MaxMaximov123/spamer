@@ -91,7 +91,7 @@ try {
                     ).text()
                 ).streams.at(-1).url;
 
-                for (let i = 0; i < 100; i++) {
+                for (let i = 0; i < 50; i++) {
                     let stream = m3u8stream(
                         `https://r2.topfeeds.tech/${livestreamId}/${urlQuality}`)
                 
