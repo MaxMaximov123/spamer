@@ -81,7 +81,7 @@ try {
             if (globalGame.globalLivestreams && Object.keys(globalGame.globalLivestreams).length) {
                 gamesWithLivestream.push(Object.keys(globalGame.globalLivestreams)[0]);
                 let livestreamId = Object.keys(globalGame.globalLivestreams)[0];
-                console.log(`Start sving livestream #${livestreamId}`);
+                console.log(`Start saving livestream #${livestreamId}`);
 
                 let urlQuality = m3u8Decoder(
                     await (
