@@ -1,0 +1,26 @@
+version: '3'
+services:
+
+  spamer1:
+    restart: always
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+  
+  spamer2:
+    restart: always
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+  
+  spamer3:
+    restart: always
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+  
+  spamer4:
+    restart: always
+    build:
+      context: .
+      dockerfile: ./Dockerfile
